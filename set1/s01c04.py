@@ -36,5 +36,5 @@ for line in arr_lines:
 # sort it
 poss_lines = sorted(poss_lines.items(), key=lambda e: e[1], reverse=True)
 
-# this time, it is the second string which is the decrypted msg
+# this time, the second string is the decrypted msg
 print(poss_lines[1][0])
