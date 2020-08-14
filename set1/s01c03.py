@@ -4,7 +4,10 @@ def char_freq(poss_str):
     num_valid_chars = list(
         filter(lambda e: 'A' <= e <= 'Z' or 'a' <= e <= 'z', poss_str))
     # poss_str with the highest ratio will be the most accurate
-    return float(len(num_valid_chars))/len(poss_str)
+    if len(poss_str)!=0:
+        return float(len(num_valid_chars))/len(poss_str)
+    else:
+        return 0
 
 
 def xor_1byte_bruteforce(str_asc):
